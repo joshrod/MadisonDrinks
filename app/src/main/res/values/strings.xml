@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MadisonDrinks</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_title">Welcome!</string>
+    <string name="welcome_text">Thanks for installing MadisonDrinks!</string>
+    <string name="ok">OK</string>
+
+
+    <string name="bv">&lt;a href=https://goo.gl/maps/2gs66Uezo632&gt;430 W Gilman St&lt;/a&gt;</string>
+    <string name="brocach">&lt;a href=https://goo.gl/maps/A9CAc3navoD2&gt;7 W Main St&lt;/a&gt;</string>
+    <string name="buck">&lt;a href=https://goo.gl/maps/19fLAYTx1GQ2&gt;115 State St&lt;/a&gt;</string>
+    <string name="buckingham">&lt;a href=https://goo.gl/maps/SHamXTKKwTu&gt;802 Regent St&lt;/a&gt;</string>
+    <string name="chasers">&lt;a href=https://goo.gl/maps/JrWTa72w1gB2&gt;319 W Gorham St&lt;/a&gt;</string>
+    <string name="church">&lt;a href=https://goo.gl/maps/znWTUKVyPNL2&gt;626 University Ave&lt;/a&gt;</string>
+    <string name="city">&lt;a href=https://goo.gl/maps/DCJRCBUMuhw&gt;636 State St&lt;/a&gt;</string>
+    <string name="dlux">&lt;a href=https://goo.gl/maps/ZkJ7bNC2sgL2&gt;117 Martin Luther King Jr Blvd&lt;/a&gt;</string>
+    <string name="w">&lt;a href=https://goo.gl/maps/dFMmgZhiteC2&gt;620 University Ave&lt;/a&gt;</string>
+    <string name="fountain">&lt;a href=https://goo.gl/maps/dScfnhEGnTr&gt;122 State St&lt;/a&gt;</string>
+    <string name="hawk">&lt;a href=https://goo.gl/maps/A7TBR6KP6Eu&gt;425 State St&lt;/a&gt;</string>
+    <string name="irish">&lt;a href=https://goo.gl/maps/CgN9gziwYYn&gt;317 State St&lt;/a&gt;</string>
+    <string name="ivory">&lt;a href=https://goo.gl/maps/K1EMipTn1H32&gt;116 W Mifflin St&lt;/a&gt;</string>
+    <string name="jordan">&lt;a href=https://goo.gl/maps/CMgcuSi5cTK2&gt;1330 Regent St&lt;/a&gt;</string>
+    <string name="kk">&lt;a href=https://goo.gl/maps/1X5fgzUioaz&gt;529 N Lake St&lt;/a&gt;</string>
+    <string name="library">&lt;a href=https://goo.gl/maps/iT5c7NCrWK12&gt;320 N Randall Ave&lt;/a&gt;</string>
+    <string name="lucky">&lt;a href=https://goo.gl/maps/LJENY4zHhiC2&gt;1421 Regent St&lt;/a&gt;</string>
+    <string name="hat">&lt;a href=https://goo.gl/maps/S5E41HWioqC2&gt;322 W Gorham St&lt;/a&gt;</string>
+    <string name="merchant">&lt;a href=https://goo.gl/maps/Sbu4SKELk2F2&gt;121 S Pinckney St&lt;/a&gt;</string>
+    <string name="monday">&lt;a href=https://goo.gl/maps/Cp8sxWThnJr&gt;523 State St&lt;/a&gt;</string>
+    <string name="nitty">&lt;a href=https://goo.gl/maps/LNMKmio2Xp22&gt;223 N Frances St&lt;/a&gt;</string>
+    <string name="paul">&lt;a href=https://goo.gl/maps/7mv8k9FyRXM2&gt;204 State St&lt;/a&gt;</string>
+    <string name="rock">&lt;a href=https://goo.gl/maps/JNLfwJw4Fcx&gt;322 W Johnson St&lt;/a&gt;</string>
+    <string name="shed">&lt;a href=https://goo.gl/maps/j5yTp3Ts1k52&gt;406 N Frances St&lt;/a&gt;</string>
+    <string name="zone">&lt;a href=https://goo.gl/maps/mrLLvV6kogC2&gt;1212 Regent St&lt;/a&gt;</string>
+    <string name="brats">&lt;a href=https://goo.gl/maps/bXbudRAK9u12&gt;603 State St&lt;/a&gt;</string>
+    <string name="tiki">&lt;a href=https://goo.gl/maps/33xXQHLqJ312&gt;128 State St&lt;/a&gt;</string>
+    <string name="vintage">&lt;a href=https://goo.gl/maps/u9uzPdfzpRH2&gt;529 University Ave&lt;/a&gt;</string>
+    <string name="wando">&lt;a href=https://goo.gl/maps/xH2BXsVX3uJ2&gt;602 University Ave&lt;/a&gt;</string>
+    <string name="whiskey">&lt;a href=https://goo.gl/maps/8FFZ3Qq9PuP2&gt;552 State St&lt;/a&gt;</string>
+</resources>
