@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">MadisonDrinks</string>
     <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+    <string name="action_legal">Legal</string>
     <string name="welcome_title">Welcome!</string>
-    <string name="welcome_text">Thanks for installing MadisonDrinks!</string>
+    <string name="welcome_text">Thanks for installing MadisonDrinks!\n\nLast updated: 2/9/2016\n\n
+    MadisonDrinks was made to help you find great bar deals in downtown Madison, Wisconsin.\n\n
+    I will try my best to keep this up-to-date. If something is wrong, report it. Click the 3 dots on the Action Bar and you will find my email under Help. \n\n
+    Drink Wisconsinably!\n\n
+    Cheers,\n
+    JoshRod</string>
     <string name="ok">OK</string>
 
 
@@ -36,4 +43,37 @@
     <string name="vintage">&lt;a href=https://goo.gl/maps/u9uzPdfzpRH2&gt;529 University Ave&lt;/a&gt;</string>
     <string name="wando">&lt;a href=https://goo.gl/maps/xH2BXsVX3uJ2&gt;602 University Ave&lt;/a&gt;</string>
     <string name="whiskey">&lt;a href=https://goo.gl/maps/8FFZ3Qq9PuP2&gt;552 State St&lt;/a&gt;</string>
+    <string name="title_activity_help">HelpActivity</string>
+
+    <string name="instructions"><b>How to Navigate:</b>\n\nThe app automatically loads to the current day of the week.\n\n
+        Swipe left to jump to the following day. Swipe right to jump to the previous day. You can also do this by clicking the name of the previous or following day at the top.\n\n
+        Click the name of the bar to expand its specials for that specific day. Click the same bar\'s name to collapse it.\n\n
+        Click on the blue link to find the bar in Google Maps if you\'re lost.\n\n</string>
+
+    <string name="howto"><b>Reading Tips:</b>\n\nThe bar specials are listed in chronological order, starting with the earliest available at the top.\n\n
+    If the bar special does not have a specific time, it is *usually* safe to assume that it occurs during the bar\'s nighttime hours.\n\n
+    Remember, the bar has the final say on what specials are available to you.\n\n</string>
+
+    <string name="contact"><b>Contact Me:</b>\n\nFeel like this is app is missing something? Want to add a bar or fix a special?\n\n
+    Just email me at: drinksmadison@gmail.com</string>
+
+    <string name="legal_pic">I am no photographer, so I had to use pictures from Flickr users that captured the beauty of our city. These photographers are incredibly talented, so you should definitely check them out!\n\n</string>
+
+    <string name="credits">Pictures used for Monday, Thursday, Friday, and Saturday were taken by Flickr user Richard Hurd.\n
+    All pictures were resized and darkened for the purpose of this app.\n
+    Find these, and other great pictures at:\n
+    https://www.flickr.com/photos/rahimageworks/ \n\n
+    Picture used for Tuesday was taken by Flickr user jgagnon.\n
+    Find his pictures at:\n
+    https://www.flickr.com/photos/jgagnon/ \n\n
+    Picture used for Wednesday was taken by Flickr user Matt Dente.\n
+    He also has amazing pictures at:\n
+    https://www.flickr.com/photos/mattdente/ \n\n
+    Picture used for Sunday was taken by Flickr user Edward Stojakovic.\n
+    Check out his cool pictures at:\n
+    https://www.flickr.com/photos/akasped/ \n\n</string>
+
+    <string name="disclaimer"><b>DISCLAIMER:</b> MadisonDrinks <b>DOES NOT</b> encourage underage or excessive drinking. Please drink responsibly!\n\n</string>
+
+    <string name="rights">MadisonDrinks, its source code, and logo, were all created and are owned by Joshua Rodriguez.</string>
 </resources>

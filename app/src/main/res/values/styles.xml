@@ -1,5 +1,5 @@
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+    <style name="AppTheme" parent="android:Theme.Holo">
         <!-- API 14 theme customizations can go here. -->
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:actionBarStyle">@style/MyActionBar</item>
@@ -8,6 +8,7 @@
     <style name="MyActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">#8A0707</item>
         <item name="android:logo">@android:color/transparent</item>
+        <item name="android:actionMenuTextColor">@color/actionbuttons</item>
         <item name="android:titleTextStyle">@style/Theme.MyAppTheme.ActionBar.TitleTextStyle</item>
     </style>
 

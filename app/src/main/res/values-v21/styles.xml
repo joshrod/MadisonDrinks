@@ -6,4 +6,10 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/black</item>
     </style>
+
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
 </resources>

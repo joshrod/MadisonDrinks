@@ -39,124 +39,21 @@ public class MondayList extends Fragment {
         return vw;
     }
 
-    public class ListAdapter extends BaseExpandableListAdapter {
-
-        private Context context1;
-        private List<String> listDataHeader1;
-        private HashMap<String, List<String>> listDataChild1;
-
-        public ListAdapter(Context context, List<String> listDataHeader,
-                           HashMap<String, List<String>> listChildData) {
-            this.context1 = context;
-            this.listDataHeader1 = listDataHeader;
-            this.listDataChild1 = listChildData;
-        }
-
-        public Object getChild(int groupPosition, int childPosition) {
-            return this.listDataChild1.get(this.listDataHeader1.get(groupPosition))
-                    .get(childPosition);
-        }
-
-        @Override
-        public int getGroupCount() {
-            // TODO Auto-generated method stub
-            return this.listDataHeader1.size();
-        }
-
-        @Override
-        public int getChildrenCount(int groupPosition) {
-            // TODO Auto-generated method stub
-            return this.listDataChild1.get(this.listDataHeader1.get(groupPosition))
-                    .size();
-        }
-
-        @Override
-        public Object getGroup(int groupPosition) {
-            // TODO Auto-generated method stub
-            return this.listDataHeader1.get(groupPosition);
-        }
-
-        @Override
-        public long getGroupId(int groupPosition) {
-            // TODO Auto-generated method stub
-            return groupPosition;
-        }
-
-        @Override
-        public long getChildId(int groupPosition, int childPosition) {
-            // TODO Auto-generated method stub
-            return childPosition;
-        }
-
-        @Override
-        public boolean hasStableIds() {
-            // TODO Auto-generated method stub
-            return false;
-        }
-
-        @Override
-        public View getGroupView(int groupPosition, boolean isExpanded,
-                                 View convertView, ViewGroup parent) {
-            // TODO Auto-generated method stub
-            String headerTitle = (String) getGroup(groupPosition);
-            if (convertView == null) {
-                LayoutInflater inflater = (LayoutInflater) this.context1
-                        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                convertView = inflater.inflate(R.layout.list_group, null);
-            }
-            TextView barsHeader = (TextView) convertView.findViewById(R.id.bars_header);
-            barsHeader.setTypeface(null, Typeface.BOLD);
-            barsHeader.setText(headerTitle);
-
-            return convertView;
-        }
-
-        @Override
-        public View getChildView(int groupPosition, int childPosition,
-                                 boolean isLastChild, View convertView, ViewGroup parent) {
-            // TODO Auto-generated method stub
-            final String childText = (String) getChild(groupPosition, childPosition);
-
-            if (convertView == null) {
-                LayoutInflater infalInflater = (LayoutInflater) this.context1.getSystemService
-                        (Context.LAYOUT_INFLATER_SERVICE);
-                convertView = infalInflater.inflate(R.layout.list_item, null);
-            }
-
-            TextView txtListChild = (TextView) convertView.findViewById(R.id.bars_item);
-            txtListChild.setText(Html.fromHtml(childText));
-            txtListChild.setMovementMethod(LinkMovementMethod.getInstance());
-            return convertView;
-        }
-
-        @Override
-        public boolean isChildSelectable(int groupPosition, int childPosition) {
-            // TODO Auto-generated method stub
-            return true;
-        }
-
-
-    }
-
     private void prepareList() {
         barsHeader = new ArrayList<String>();
         barsChildren = new HashMap<String, List<String>>();
 
         //add Header data
         barsHeader.add("Blue Velvet Lounge");
-        barsHeader.add("Brocach");
         barsHeader.add("Buck and Badger");
         barsHeader.add("Buckingham's");
         barsHeader.add("Chaser's");
         barsHeader.add("Church Key");
         barsHeader.add("City Bar");
         barsHeader.add("DLUX");
-        barsHeader.add("The Double U");
-        barsHeader.add("The Fountain");
         barsHeader.add("Hawk's");
         barsHeader.add("Irish Pub");
-        barsHeader.add("The Ivory Room");
-        barsHeader.add("Jordan's Big 10");
+        barsHeader.add("Jordan's Big Ten");
         barsHeader.add("The Kollege Klub");
         barsHeader.add("The Library");
         barsHeader.add("Lucky's");
@@ -177,62 +74,74 @@ public class MondayList extends Fragment {
         //add Child data
         List<String> bV = new ArrayList<String>();
         bV.add(getResources().getString(R.string.bv));
-        bV.add("MONDAY SPECIAL");
-        bV.add("MONDAY SPECIAL");
-        bV.add("MONDAY SPECIAL");
-        bV.add("MONDAY SPECIAL");
-
-        List<String> bro = new ArrayList<String>();
-        bro.add(getResources().getString(R.string.brocach));
-        bro.add("MONDAY SPECIAL");
+        bV.add("CLOSED");
 
         List<String> buck = new ArrayList<String>();
         buck.add(getResources().getString(R.string.buck));
-        buck.add("MONDAY SPECIAL");
+        buck.add("$5 Caramel Apple Martini");
+        buck.add("$2.50 Bartender's Seasonal Choice");
 
         List<String> bucky = new ArrayList<String>();
         bucky.add(getResources().getString(R.string.buckingham));
-        bucky.add("MONDAY SPECIAL");
+        bucky.add("Happy Hour (3pm - 7pm)");
+        bucky.add("\t\t\t\t$1 off Regular Food Items");
+        bucky.add("\t\t\t\t$.75 off Mixers");
+        bucky.add("\t\t\t\t$.50 off Beer Items");
+        bucky.add("Night Specials (7pm - close)");
+        bucky.add("\t\t\t\t4 Cans of Domestics for $10");
+        bucky.add("\t\t\t\t$4.75 Tallboys and Whiskey Shot");
+        bucky.add("Hammertime (9:30pm - 11pm)");
+        bucky.add("\t\t\t\t$1 Rail Mixers");
+        bucky.add("\t\t\t\t$1 Specialty Shots");
+        bucky.add("\t\t\t\t$2 Wisconsin Taps");
+        bucky.add("\t\t\t\t$2 Specialty Shots");
 
         List<String> chase = new ArrayList<String>();
         chase.add(getResources().getString(R.string.chasers));
-        chase.add("MONDAY SPECIAL");
+        chase.add("$.60 Wings");
+        chase.add("$3 Taps");
 
         List<String> church = new ArrayList<String>();
         church.add(getResources().getString(R.string.church));
-        church.add("MONDAY SPECIAL");
+        church.add("CLOSED");
 
         List<String> city = new ArrayList<String>();
         city.add(getResources().getString(R.string.city));
-        city.add("MONDAY SPECIAL");
+        city.add("Happy Hour (3pm - 7pm)");
+        city.add("\t\t\t\t$1 off Everything");
+        city.add("Night Specials (7pm - close)");
+        city.add("\t\t\t\t$3 Wisconsin Taps");
+        city.add("\t\t\t\t$9 Pitchers of Wisconsin Taps");
+        city.add("\t\t\t\t$4 Tito's Vodka Mixers");
+        city.add("Trivia Night at 8:30pm");
 
         List<String> dlux = new ArrayList<String>();
-        dlux.add(getResources().getString(R.string.dlux));
-        dlux.add("MONDAY SPECIAL");
-
-        List<String> w = new ArrayList<String>();
-        w.add(getResources().getString(R.string.w));
-        w.add("MONDAY SPECIAL");
-
-        List<String> fount = new ArrayList<String>();
-        fount.add(getResources().getString(R.string.fountain));
-        fount.add("MONDAY SPECIAL");
+        dlux.add("NONE");
 
         List<String> hawk = new ArrayList<String>();
         hawk.add(getResources().getString(R.string.hawk));
-        hawk.add("MONDAY SPECIAL");
+        hawk.add("$7 Pitchers");
+        hawk.add("$2 Tullamore Dew and Jameson Shots");
 
         List<String> irish = new ArrayList<String>();
         irish.add(getResources().getString(R.string.irish));
-        irish.add("MONDAY SPECIAL");
-
-        List<String> iv = new ArrayList<String>();
-        iv.add(getResources().getString(R.string.ivory));
-        iv.add("MONDAY SPECIAL");
+        irish.add("Night Specials (7pm - close)");
+        irish.add("\t\t\t\t$2.50 Domestic Bottles");
+        irish.add("\t\t\t\tTop Shelf Mixers at Rail Price");
 
         List<String> jordan = new ArrayList<String>();
         jordan.add(getResources().getString(R.string.jordan));
-        jordan.add("MONDAY SPECIAL");
+        jordan.add("Happy Hour (3pm - 6pm)");
+        jordan.add("\t\t\t\t$2 Domestic Taps");
+        jordan.add("\t\t\t\t$3 Micro Taps");
+        jordan.add("\t\t\t\t$1 off Bottled Beers");
+        jordan.add("\t\t\t\t$.50 off Wine and Mixed Drinks");
+        jordan.add("\t\t\t\tDiscounts on Pitchers");
+        jordan.add("$.60 Tacos starting at 6pm");
+        jordan.add("Night Specials (8pm - close)");
+        jordan.add("\t\t\t\t$2 Kamikaze Shots");
+        jordan.add("\t\t\t\t$1.50 Rail Mixers");
+        jordan.add("\t\t\t\t$2.50 Beer of the Night");
 
         List<String> kK = new ArrayList<String>();
         kK.add(getResources().getString(R.string.kk));
@@ -240,95 +149,147 @@ public class MondayList extends Fragment {
 
         List<String> lib = new ArrayList<String>();
         lib.add(getResources().getString(R.string.library));
-        lib.add("MONDAY SPECIAL");
+        lib.add("Happy Hour (4pm - 7pm)");
+        lib.add("\t\t\t\t$3.25 - $4.25 Taps");
+        lib.add("\t\t\t\t$2.50 Rail Mixers");
+        lib.add("\t\t\t\t$2.25 Domestics");
+        lib.add("$3 Jim Beam Mixers");
+        lib.add("$2 Domestics (9pm - close)");
 
         List<String> lucky = new ArrayList<String>();
         lucky.add(getResources().getString(R.string.lucky));
-        lucky.add("MONDAY SPECIAL");
+        lucky.add("$.50 Wings");
+        lucky.add("$3 New Belgium Taps");
+        lucky.add("$3 Smirnoff Mixers");
 
         List<String> hat = new ArrayList<String>();
         hat.add(getResources().getString(R.string.hat));
-        hat.add("MONDAY SPECIAL");
+        hat.add("$2 Micro Bottles and Bombs");
 
         List<String> mer = new ArrayList<String>();
         mer.add(getResources().getString(R.string.merchant));
-        mer.add("MONDAY SPECIAL");
+        mer.add("Happy Hour (3pm - 6pm)");
+        mer.add("\t\t\t\t$2 off Classic Cocktails and Drafts");
+        mer.add("\t\t\t\t$2 off Lawnmower Beers");
+        mer.add("$13 Market Burger and a Pint");
+        mer.add("$28 Two Burgers and Pitcher");
 
         List<String> monday = new ArrayList<String>();
         monday.add(getResources().getString(R.string.monday));
-        monday.add("MONDAY SPECIAL");
+        monday.add("$2 Rail Mixers");
+        monday.add("$1 Taps");
+        monday.add("$2 Tequila Shots");
 
         List<String> nitty = new ArrayList<String>();
         nitty.add(getResources().getString(R.string.nitty));
-        nitty.add("MONDAY SPECIAL");
+        nitty.add("Night Specials (9pm - close)");
+        nitty.add("\t\t\t\t$3 Corona Bottles");
+        nitty.add("\t\t\t\t$3 Milagro Shots and Margaritas");
+        nitty.add("\t\t\t\t$1.25 Tacos");
+        nitty.add("Power Hour (10pm - 11pm)");
+        nitty.add("\t\t\t\t$1.25 Rail Mixers");
+        nitty.add("\t\t\t\t$1 High Life Taps");
+        nitty.add("\t\t\t\t$2.25 Bomb Shots");
+        nitty.add("Late Night Specials (11pm - close)");
+        nitty.add("\t\t\t\t$4 High Life Pitchers");
+        nitty.add("\t\t\t\t$2.50 Three Olives Mixers");
+        nitty.add("\t\t\t\t$3 Milagro Shots");
 
         List<String> paul = new ArrayList<String>();
         paul.add(getResources().getString(R.string.paul));
-        paul.add("MONDAY SPECIAL");
+        paul.add("$2 Mystery Shots");
+        paul.add("$3 Labatt Blues");
 
         List<String> red = new ArrayList<String>();
         red.add(getResources().getString(R.string.rock));
-        red.add("MONDAY SPECIAL");
+        red.add("$.50 Wings All Day");
+        red.add("Happy Hour (4pm - 7pm)");
+        red.add("\t\t\t\t1/2 off All Taps and Apps");
+        red.add("\t\t\t\t$5 Red Rock Signature Drinks");
+        red.add("\t\t\t\tFree Bull Rides");
+        red.add("Trivia Night");
+        red.add("Night Specials (10pm - close)");
+        red.add("\t\t\t\t$2.50 Wisconsin Beers");
+        red.add("\t\t\t\t$3 Hasse's Apple Pie Shots");
 
         List<String> shed = new ArrayList<String>();
         shed.add(getResources().getString(R.string.shed));
-        shed.add("MONDAY SPECIAL");
+        shed.add("$1.75 Top Shelf Whiskey Mixers");
 
         List<String> zone = new ArrayList<String>();
         zone.add(getResources().getString(R.string.zone));
-        zone.add("MONDAY SPECIAL");
+        zone.add("Happy Hour (3pm - 7pm)");
+        zone.add("\t\t\t\t$1 off Any Drink");
+        zone.add("\t\t\t\t$2 off Any Pitchers");
 
         List<String> brats = new ArrayList<String>();
         brats.add(getResources().getString(R.string.brats));
-        brats.add("MONDAY SPECIAL");
-        brats.add("MONDAY SPECIAL");
+        brats.add("$2 off Everything");
+        brats.add("(Students and Service Industry Only)");
 
         List<String> tiki = new ArrayList<String>();
         tiki.add(getResources().getString(R.string.tiki));
-        tiki.add("MONDAY SPECIAL");
+        tiki.add("Happy Hour (5pm - 7pm)");
+        tiki.add("\t\t\t\t1/2 off Appetizers");
+        tiki.add("$2 Select Shots");
+        tiki.add("$3 Select Bomb Shots");
+        tiki.add("$3 Double Vodka Lemonades");
 
         List<String> vin = new ArrayList<String>();
         vin.add(getResources().getString(R.string.vintage));
-        vin.add("MONDAY SPECIAL");
+        vin.add("Happy Hour (3pm - 8pm)");
+        vin.add("\t\t\t\t1/2 off All Vintage Brews");
+        vin.add("\t\t\t\t$2 Rail Mixers");
+        vin.add("Night Specials (9pm - close)");
+        vin.add("\t\t\t\t$1 Wisconsin Taps");
+        vin.add("\t\t\t\t$2 off Vintage Brews");
+        vin.add("$2.50 Fireball Shots (midnight - close)");
 
         List<String> wand = new ArrayList<String>();
         wand.add(getResources().getString(R.string.wando));
-        wand.add("MONDAY SPECIAL");
+        wand.add("All Day Every Day Specials");
+        wand.add("\t\t\t\t$3.50 High Life Bottles");
+        wand.add("\t\t\t\t$3.50 PBR Bottles");
+        wand.add("\t\t\t\t$5 Jumbo UV Mixers");
+        wand.add("Night Specials");
+        wand.add("\t\t\t\t$2.50 Domestic Taps");
+        wand.add("\t\t\t\t$2 Lemon Drops and Breakfast Shots");
+        wand.add("\t\t\t\t$4 Jumbo Rail Mixers");
 
         List<String> whiskey = new ArrayList<String>();
         whiskey.add(getResources().getString(R.string.whiskey));
-        whiskey.add("MONDAY SPECIAL");
+        whiskey.add("Happy Hour (3pm - 7pm)");
+        whiskey.add("\t\t\t\t$1 off all Taps");
+        whiskey.add("\t\t\t\t$2 Rail Drinks");
+        whiskey.add("\t\t\t\t$3 Call Drinks");
+        whiskey.add("$3 Taps and Rails");
 
         barsChildren.put(barsHeader.get(0), bV); //Header and Child
-        barsChildren.put(barsHeader.get(1), bro);
-        barsChildren.put(barsHeader.get(2), buck);
-        barsChildren.put(barsHeader.get(3), bucky);
-        barsChildren.put(barsHeader.get(4), chase);
-        barsChildren.put(barsHeader.get(5), church);
-        barsChildren.put(barsHeader.get(6), city);
-        barsChildren.put(barsHeader.get(7), dlux);
-        barsChildren.put(barsHeader.get(8), w);
-        barsChildren.put(barsHeader.get(9), fount);
-        barsChildren.put(barsHeader.get(10), hawk);
-        barsChildren.put(barsHeader.get(11), irish);
-        barsChildren.put(barsHeader.get(12), iv);
-        barsChildren.put(barsHeader.get(13), jordan);
-        barsChildren.put(barsHeader.get(14), kK);
-        barsChildren.put(barsHeader.get(15), lib);
-        barsChildren.put(barsHeader.get(16), lucky);
-        barsChildren.put(barsHeader.get(17), hat);
-        barsChildren.put(barsHeader.get(18), mer);
-        barsChildren.put(barsHeader.get(19), monday);
-        barsChildren.put(barsHeader.get(20), nitty);
-        barsChildren.put(barsHeader.get(21), paul);
-        barsChildren.put(barsHeader.get(22), red);
-        barsChildren.put(barsHeader.get(23), shed);
-        barsChildren.put(barsHeader.get(24), zone);
-        barsChildren.put(barsHeader.get(25), brats);
-        barsChildren.put(barsHeader.get(26), tiki);
-        barsChildren.put(barsHeader.get(27), vin);
-        barsChildren.put(barsHeader.get(28), wand);
-        barsChildren.put(barsHeader.get(29), whiskey);
+        barsChildren.put(barsHeader.get(1), buck);
+        barsChildren.put(barsHeader.get(2), bucky);
+        barsChildren.put(barsHeader.get(3), chase);
+        barsChildren.put(barsHeader.get(4), church);
+        barsChildren.put(barsHeader.get(5), city);
+        barsChildren.put(barsHeader.get(6), dlux);
+        barsChildren.put(barsHeader.get(7), hawk);
+        barsChildren.put(barsHeader.get(8), irish);
+        barsChildren.put(barsHeader.get(9), jordan);
+        barsChildren.put(barsHeader.get(10), kK);
+        barsChildren.put(barsHeader.get(11), lib);
+        barsChildren.put(barsHeader.get(12), lucky);
+        barsChildren.put(barsHeader.get(13), hat);
+        barsChildren.put(barsHeader.get(14), mer);
+        barsChildren.put(barsHeader.get(15), monday);
+        barsChildren.put(barsHeader.get(16), nitty);
+        barsChildren.put(barsHeader.get(17), paul);
+        barsChildren.put(barsHeader.get(18), red);
+        barsChildren.put(barsHeader.get(19), shed);
+        barsChildren.put(barsHeader.get(20), zone);
+        barsChildren.put(barsHeader.get(21), brats);
+        barsChildren.put(barsHeader.get(22), tiki);
+        barsChildren.put(barsHeader.get(23), vin);
+        barsChildren.put(barsHeader.get(24), wand);
+        barsChildren.put(barsHeader.get(25), whiskey);
 
     }
 }
