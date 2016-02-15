@@ -128,7 +128,7 @@ public class FridayList extends Fragment {
 
         List<String> dlux = new ArrayList<String>();
         dlux.add(getResources().getString(R.string.dlux));
-        dlux.add("2-4-1 After 11pm");
+        dlux.add("NONE");
 
         List<String> hawk = new ArrayList<String>();
         hawk.add("NONE");
@@ -238,6 +238,10 @@ public class FridayList extends Fragment {
 
         List<String> brats = new ArrayList<String>();
         brats.add(getResources().getString(R.string.brats));
+        brats.add("Progressive Fridays");
+        brats.add("\t\t\t\t5 for $5 (9pm - 10pm)");
+        brats.add("\t\t\t\t4 for $5 (10pm - 11pm)");
+        brats.add("\t\t\t\t3 for $5 (11pm - midnight)");
         brats.add("$6 Tullamore Dew and Absolut Double Mixers");
 
         List<String> tiki = new ArrayList<String>();
@@ -263,8 +267,7 @@ public class FridayList extends Fragment {
         wand.add("All Day Every Day Specials");
         wand.add("\t\t\t\t$3.50 High Life Bottles");
         wand.add("\t\t\t\t$3.50 PBR Bottles");
-        wand.add("\t\t\t\t$5 Jumbo UV Mixers");
-        wand.add("$7 Bud Light Pitchers");
+        wand.add("$6 Jumbo Three Olives Mixers");
 
         List<String> whiskey = new ArrayList<String>();
         whiskey.add(getResources().getString(R.string.whiskey));

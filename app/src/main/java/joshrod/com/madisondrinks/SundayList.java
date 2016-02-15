@@ -190,7 +190,7 @@ public class SundayList extends Fragment {
 
         List<String> shed = new ArrayList<String>();
         shed.add(getResources().getString(R.string.shed));
-        shed.add("NONE");
+        shed.add("$2 Bottles of High Life");
 
         List<String> zone = new ArrayList<String>();
         zone.add(getResources().getString(R.string.zone));

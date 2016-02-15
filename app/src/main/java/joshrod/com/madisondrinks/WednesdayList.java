@@ -102,6 +102,7 @@ public class WednesdayList extends Fragment {
         chase.add(getResources().getString(R.string.chasers));
         chase.add("$.50 Tacos");
         chase.add("$4 Jumbo Margaritas");
+        chase.add("3 for $5 Rail Mixers");
 
         List<String> church = new ArrayList<String>();
         church.add(getResources().getString(R.string.church));
@@ -264,13 +265,12 @@ public class WednesdayList extends Fragment {
         wand.add("All Day Every Day Specials");
         wand.add("\t\t\t\t$3.50 High Life Bottles");
         wand.add("\t\t\t\t$3.50 PBR Bottles");
-        wand.add("\t\t\t\t$5 Jumbo UV Mixers");
         wand.add("Student Appreciation Night");
         wand.add("Specials only valid with Student ID");
-        wand.add("\t\t\t\t$2 Miller High Life Bottles");
-        wand.add("\t\t\t\t$4 Jumbo UV Mixers");
-        wand.add("\t\t\t\t$10 Fishbowls");
-        wand.add("\t\t\t\t10 Wings for $3");
+        wand.add("\t\t\t\t$2 Domestic Drafts");
+        wand.add("\t\t\t\t$4 Jumbo Rails");
+        wand.add("\t\t\t\t$8 Personal Fishbowls");
+        wand.add("\t\t\t\t$.50 Wings");
 
         List<String> whiskey = new ArrayList<String>();
         whiskey.add(getResources().getString(R.string.whiskey));

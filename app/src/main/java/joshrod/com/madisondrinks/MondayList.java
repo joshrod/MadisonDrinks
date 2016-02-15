@@ -214,6 +214,7 @@ public class MondayList extends Fragment {
 
         List<String> shed = new ArrayList<String>();
         shed.add(getResources().getString(R.string.shed));
+        shed.add("$2 Bottles of Miller High Life");
         shed.add("$1.75 Top Shelf Whiskey Mixers");
 
         List<String> zone = new ArrayList<String>();
@@ -250,11 +251,11 @@ public class MondayList extends Fragment {
         wand.add("All Day Every Day Specials");
         wand.add("\t\t\t\t$3.50 High Life Bottles");
         wand.add("\t\t\t\t$3.50 PBR Bottles");
-        wand.add("\t\t\t\t$5 Jumbo UV Mixers");
         wand.add("Night Specials");
-        wand.add("\t\t\t\t$2.50 Domestic Taps");
-        wand.add("\t\t\t\t$2 Lemon Drops and Breakfast Shots");
-        wand.add("\t\t\t\t$4 Jumbo Rail Mixers");
+        wand.add("\t\t\t\t$2 Miller Lite or Coors Bottles");
+        wand.add("\t\t\t\t$3 Rail Mixers");
+        wand.add("\t\t\t\t$3 Fireball Shots");
+        wand.add("\t\t\t\t$3 Burger Basket");
 
         List<String> whiskey = new ArrayList<String>();
         whiskey.add(getResources().getString(R.string.whiskey));

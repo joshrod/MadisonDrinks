@@ -124,7 +124,7 @@ public class ThursdayList extends Fragment {
 
         List<String> dlux = new ArrayList<String>();
         dlux.add(getResources().getString(R.string.dlux));
-        dlux.add("2-4-1 After 11pm");
+        dlux.add("NONE");
 
         List<String> hawk = new ArrayList<String>();
         hawk.add(getResources().getString(R.string.hawk));
@@ -234,8 +234,8 @@ public class ThursdayList extends Fragment {
 
         List<String> shed = new ArrayList<String>();
         shed.add(getResources().getString(R.string.shed));
-        shed.add("1/2 off Pints");
-        shed.add("$2.50 Bacardi Mixers");
+        shed.add("$2 Bud Light Pints");
+        shed.add("$2.50 Bacardi High Balls");
 
         List<String> zone = new ArrayList<String>();
         zone.add(getResources().getString(R.string.zone));
@@ -279,12 +279,13 @@ public class ThursdayList extends Fragment {
         wand.add("All Day Every Day Specials");
         wand.add("\t\t\t\t$3.50 High Life Bottles");
         wand.add("\t\t\t\t$3.50 PBR Bottles");
-        wand.add("\t\t\t\t$5 Jumbo UV Mixers");
-        wand.add("$1.50 Jameson Shots before 10pm");
-        wand.add("$2 Jameson Shots after 10pm");
-        wand.add("$3 Pitchers of Lienie's before 10pm");
-        wand.add("$4 Pitchers of Lienie's 10pm - 11pm");
-        wand.add("$5 Pitchers of Lienie's after 11pm");
+        wand.add("Night Specials");
+        wand.add("\t\t\t\t$2 Jameson Shots");
+        wand.add("\t\t\t\t$2 Fireball Shots");
+        wand.add("\t\t\t\t$2 Domestic Drafts");
+        wand.add("\t\t\t\t$4 Jumbo Captain Mixers");
+        wand.add("\t\t\t\t$3 Vegas Bombs");
+        wand.add("\t\t\t\t$15 Fishbowls");
 
         List<String> whiskey = new ArrayList<String>();
         whiskey.add(getResources().getString(R.string.whiskey));

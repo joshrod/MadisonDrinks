@@ -4,7 +4,7 @@
     <string name="action_help">Help</string>
     <string name="action_legal">Legal</string>
     <string name="welcome_title">Welcome!</string>
-    <string name="welcome_text">Thanks for installing MadisonDrinks!\n\nLast updated: 2/9/2016\n\n
+    <string name="welcome_text">Thanks for installing MadisonDrinks!\n\nLast updated: 2/14/2016\n\n
     MadisonDrinks was made to help you find great bar deals in downtown Madison, Wisconsin.\n\n
     I will try my best to keep this up-to-date. If something is wrong, report it. Click the 3 dots on the Action Bar and you will find my email under Help. \n\n
     Drink Wisconsinably!\n\n
@@ -73,7 +73,7 @@
     Check out his cool pictures at:\n
     https://www.flickr.com/photos/akasped/ \n\n</string>
 
-    <string name="disclaimer"><b>DISCLAIMER:</b> MadisonDrinks <b>DOES NOT</b> encourage underage or excessive drinking. Please drink responsibly!\n\n</string>
+    <string name="disclaimer"><b>DISCLAIMER:</b> MadisonDrinks <b>DOES NOT</b> encourage underage or excessive drinking. Bars usually change around their specials on certain days for events. Be aware that bars have the final say on what their specials are. Please drink responsibly!\n\n</string>
 
     <string name="rights">MadisonDrinks, its source code, and logo, were all created and are owned by Joshua Rodriguez.</string>
 </resources>
