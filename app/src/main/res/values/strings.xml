@@ -4,10 +4,7 @@
     <string name="action_help">Help</string>
     <string name="action_legal">Legal</string>
     <string name="welcome_title">Welcome!</string>
-    <string name="welcome_text">Thanks for installing MadisonDrinks!\n\nLast updated: 2/14/2016\n\n
-    MadisonDrinks was made to help you find great bar deals in downtown Madison, Wisconsin.\n\n
-    I will try my best to keep this up-to-date. If something is wrong, report it. Click the 3 dots on the Action Bar and you will find my email under Help. \n\n
-    Drink Wisconsinably!\n\n
+    <string name="welcome_text">Thanks for installing/updating MadisonDrinks!\n\nLast updated: 2/21/2016\n\nMadisonDrinks was made to help you find great bar deals in downtown Madison, Wisconsin.\n\nDrink Wisconsinably!\n\n
     Cheers,\n
     JoshRod</string>
     <string name="ok">OK</string>

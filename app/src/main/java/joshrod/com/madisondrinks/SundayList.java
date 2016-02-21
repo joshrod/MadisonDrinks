@@ -218,7 +218,7 @@ public class SundayList extends Fragment {
         wand.add("All Day Every Day Specials");
         wand.add("\t\t\t\t$3.50 High Life Bottles");
         wand.add("\t\t\t\t$3.50 PBR Bottles");
-        wand.add("$2.50 Domestic Taps");
+        wand.add("$2 Domestic Taps");
         wand.add("$4 Jumbo UV Mixers");
 
         List<String> whiskey = new ArrayList<String>();

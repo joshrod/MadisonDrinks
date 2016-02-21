@@ -77,6 +77,7 @@ public class ThursdayList extends Fragment {
         bV.add(getResources().getString(R.string.bv));
         bV.add("$5 Martinis until 9pm");
         bV.add("Badger Latin Night");
+        bV.add("\t\t\t\tDJ & Dancing starts at 10pm");
         bV.add("\t\t\t\t$2 Rails & Domestics");
         bV.add("\t\t\t\t$3 Dos Equis");
         bV.add("\t\t\t\t2 Camarena Shots for $5");
@@ -124,7 +125,10 @@ public class ThursdayList extends Fragment {
 
         List<String> dlux = new ArrayList<String>();
         dlux.add(getResources().getString(R.string.dlux));
-        dlux.add("NONE");
+        dlux.add("Afternoon Specials (3pm - 6:30pm)");
+        dlux.add("\t\t\t\t$2 off Taps and Apps");
+        dlux.add("\t\t\t\t$6 Spuds and Sparklers");
+
 
         List<String> hawk = new ArrayList<String>();
         hawk.add(getResources().getString(R.string.hawk));

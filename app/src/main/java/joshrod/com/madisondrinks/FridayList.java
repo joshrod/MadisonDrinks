@@ -113,10 +113,9 @@ public class FridayList extends Fragment {
         church.add("\t\t\t\t$2.50 Rails");
         church.add("\t\t\t\t$3 Domestic Pitchers");
         church.add("Progressive Coors Light Pitchers Starting at $3");
-        church.add("$2.50 PBR Taps");
-        church.add("$3 Long Islands");
-        church.add("$4 Jim Beam Mixers");
-        church.add("$4 Three Olives Mixers");
+        church.add("$2.50 PBR Tallboys or Taps");
+        church.add("$5 Jumbo Captain Mixers");
+        church.add("$5 Jumbo Long Islands");
 
         List<String> city = new ArrayList<String>();
         city.add(getResources().getString(R.string.city));

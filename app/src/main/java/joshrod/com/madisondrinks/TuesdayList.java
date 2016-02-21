@@ -120,7 +120,10 @@ public class TuesdayList extends Fragment {
         city.add("\t\t\t\tPlay Wii & N64 Systems");
 
         List<String> dlux = new ArrayList<String>();
-        dlux.add("NONE");
+        dlux.add("Afternoon Specials (3pm - 6:30pm)");
+        dlux.add("\t\t\t\t$2 off Taps and Apps");
+        dlux.add("\t\t\t\t$6 Spuds and Sparklers");
+
 
         List<String> hawk = new ArrayList<String>();
         hawk.add(getResources().getString(R.string.hawk));

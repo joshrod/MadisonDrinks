@@ -112,6 +112,7 @@ public class WednesdayList extends Fragment {
         church.add("Free Popcorn & Darts");
         church.add("$2 Wild Wild Wednesday Shots");
         church.add("$3 All Taps");
+        church.add("$3 Blowjob Shot");
         church.add("$4 Bombs");
         church.add("$4 Jack Mixers");
         church.add("$5 Domestic Pitchers");
@@ -122,7 +123,10 @@ public class WednesdayList extends Fragment {
         city.add("\t\t\t\t$1 off Everything");
 
         List<String> dlux = new ArrayList<String>();
-        dlux.add("NONE");
+        dlux.add("Afternoon Specials (3pm - 6:30pm)");
+        dlux.add("\t\t\t\t$2 off Taps and Apps");
+        dlux.add("\t\t\t\t$6 Spuds and Sparklers");
+
 
         List<String> hawk = new ArrayList<String>();
         hawk.add(getResources().getString(R.string.hawk));
